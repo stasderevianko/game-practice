@@ -1,22 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    </sceneKitView>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="game_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q9i-bt-QUn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Очки:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-Vk-ASr">
+                                <rect key="frame" x="136" y="44" width="117" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="4br-Bt-hjG"/>
+                                    <constraint firstAttribute="width" constant="117" id="Kcs-nB-HbY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <sceneKitView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NTX-fN-Ycx">
+                                <rect key="frame" x="0.0" y="0.0" width="117" height="896"/>
+                            </sceneKitView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DCn-7O-d5E"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NTX-fN-Ycx" firstAttribute="top" secondItem="q9i-bt-QUn" secondAttribute="top" id="3mh-0k-wvg"/>
+                            <constraint firstItem="Jp2-Vk-ASr" firstAttribute="top" secondItem="q9i-bt-QUn" secondAttribute="topMargin" id="6yV-dn-aod"/>
+                            <constraint firstItem="DCn-7O-d5E" firstAttribute="bottom" secondItem="Jp2-Vk-ASr" secondAttribute="bottom" constant="777" id="A8k-Ka-GTD"/>
+                            <constraint firstItem="Jp2-Vk-ASr" firstAttribute="leading" secondItem="DCn-7O-d5E" secondAttribute="leading" id="Ak8-Yl-F5M"/>
+                            <constraint firstAttribute="bottom" secondItem="NTX-fN-Ycx" secondAttribute="bottom" id="FaD-hW-zWi"/>
+                            <constraint firstAttribute="bottom" secondItem="NTX-fN-Ycx" secondAttribute="bottom" id="FrI-mS-rTz"/>
+                            <constraint firstItem="NTX-fN-Ycx" firstAttribute="top" secondItem="q9i-bt-QUn" secondAttribute="top" id="GgQ-Wo-lTc"/>
+                            <constraint firstItem="Jp2-Vk-ASr" firstAttribute="leading" secondItem="DCn-7O-d5E" secondAttribute="leading" id="Pjk-iq-Yxj"/>
+                            <constraint firstItem="NTX-fN-Ycx" firstAttribute="leading" secondItem="q9i-bt-QUn" secondAttribute="leading" id="bd5-Dj-nJh"/>
+                            <constraint firstAttribute="trailing" secondItem="NTX-fN-Ycx" secondAttribute="trailing" id="eFl-TJ-yAf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jp2-Vk-ASr" secondAttribute="trailing" id="fv4-35-vgn"/>
+                            <constraint firstItem="DCn-7O-d5E" firstAttribute="trailing" secondItem="Jp2-Vk-ASr" secondAttribute="trailing" id="k2j-UF-dJN"/>
+                            <constraint firstItem="NTX-fN-Ycx" firstAttribute="trailing" secondItem="q9i-bt-QUn" secondAttribute="trailing" id="mSS-qJ-cht"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Jp2-Vk-ASr" secondAttribute="bottom" constant="777" id="mcF-uD-Qr5"/>
+                            <constraint firstItem="Jp2-Vk-ASr" firstAttribute="top" secondItem="DCn-7O-d5E" secondAttribute="top" id="ojn-XL-GoD"/>
+                            <constraint firstItem="NTX-fN-Ycx" firstAttribute="leading" secondItem="DCn-7O-d5E" secondAttribute="leading" id="rgm-2e-SCi"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scnView" destination="NTX-fN-Ycx" id="hSM-vs-FNF"/>
+                        <outlet property="scoreLabel" destination="Jp2-Vk-ASr" id="hYf-ou-PZt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="725" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

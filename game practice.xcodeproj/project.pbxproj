@@ -12,6 +12,7 @@
 		044583F62552FEC1001FA82C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044583F52552FEC1001FA82C /* GameViewController.swift */; };
 		044583F92552FEC1001FA82C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044583F72552FEC1001FA82C /* Main.storyboard */; };
 		044583FB2552FEC2001FA82C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044583FA2552FEC2001FA82C /* Assets.xcassets */; };
+		0457C8D12554782B0059F542 /* Screen Shot 4 .png in Resources */ = {isa = PBXBuildFile; fileRef = 0457C8D02554782B0059F542 /* Screen Shot 4 .png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		044583F82552FEC1001FA82C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044583FA2552FEC2001FA82C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044583FC2552FEC2001FA82C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0457C8D02554782B0059F542 /* Screen Shot 4 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screen Shot 4 .png"; path = "../../Screen Shot 4 .png"; sourceTree = "<group>"; };
+		0457C8D42554783A0059F542 /* Screen Shot 4 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 4 .png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,8 @@
 		044583F02552FEC1001FA82C /* game practice */ = {
 			isa = PBXGroup;
 			children = (
+				0457C8D32554783A0059F542 /* Screenshots */,
+				0457C8D02554782B0059F542 /* Screen Shot 4 .png */,
 				044583F12552FEC1001FA82C /* AppDelegate.swift */,
 				044583F32552FEC1001FA82C /* art.scnassets */,
 				044583F52552FEC1001FA82C /* GameViewController.swift */,
@@ -62,6 +67,14 @@
 				044583FC2552FEC2001FA82C /* Info.plist */,
 			);
 			path = "game practice";
+			sourceTree = "<group>";
+		};
+		0457C8D32554783A0059F542 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				0457C8D42554783A0059F542 /* Screen Shot 4 .png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +137,7 @@
 				044583F42552FEC1001FA82C /* art.scnassets in Resources */,
 				044583FB2552FEC2001FA82C /* Assets.xcassets in Resources */,
 				044583F92552FEC1001FA82C /* Main.storyboard in Resources */,
+				0457C8D12554782B0059F542 /* Screen Shot 4 .png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
